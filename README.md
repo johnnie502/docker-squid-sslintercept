@@ -27,7 +27,7 @@ Add the squidconfig/cacert.pem to your browser as a trusted cert.
 
 ## Start the container: 
 
-   docker run  -t --rm   -p 3128:3128 squid
+    docker run  -t --rm   -p 3128:3128 squid
    
 ## Configure your browser 
 

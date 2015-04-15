@@ -32,3 +32,19 @@ Add the squidconfig/cacert.pem to your browser as a trusted cert.
 ## Configure your browser 
 
 Set your browser proxy to localhost:3128
+
+
+# Rebuilding squid 
+
+The package includes a recompiled squid with --enable-ssl and
+--enable-ssl-crt compiled in - these are excluded from debian/ubuntu
+builds. 
+
+
+To rebuild squid (on an ubuntu machine)
+
+   apt-get source squid3
+  
+modify debian/rules and add --enable-ssl and --enable-ssl-crtd
+
+rebuild the deb. 

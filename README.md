@@ -14,8 +14,7 @@ the proxy).
 
 You can use the certs here or generate new ones: 
 
-    openssl req -new -newkey rsa:2048 -sha256 -days 3000 -nodes -x509
--keyout cakey.pem  -out cacert.pem
+    openssl req -new -newkey rsa:2048 -sha256 -days 3000 -nodes -x509 -keyout cakey.pem  -out cacert.pem
 
 
 Add the squidconfig/cacert.pem to your browser as a trusted cert. 
